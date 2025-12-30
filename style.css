@@ -18,7 +18,7 @@
 
 .light-mode {
   --text-color: black;
-  --bg-color: #b289c2;
+  --bg-color: rgb(230, 221, 238);
   --border-color-links: rgba(0, 0, 0, 0.5);
   --bg-color-links: rgba(0, 0, 0, 0.05);
   --bg-social-hover: rgba(0, 0, 0, 0.05);
