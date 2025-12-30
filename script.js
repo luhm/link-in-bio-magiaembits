@@ -9,9 +9,9 @@ function toggleMode() {
   //quer é pesquisar, então aqui pedimos para pesquisar pelo seletor, e usamos o mesmo do css
   const img = document.querySelector("#profile0 img")
   if (html.classList.contains("light-mode")) {
-    img.setAttribute("src", "./assets/foto_luiza.png")
+    img.setAttribute("src", "./assets/logo-completo.png")
   } else {
-    img.setAttribute("src", "./assets/foto_luiza_dark.png")  
+    img.setAttribute("src", "./assets/logo-completo.png")  
   }
   if (html.classList.contains("light-mode")) {
     img.setAttribute(
