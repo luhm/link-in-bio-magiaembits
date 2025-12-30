@@ -33,7 +33,7 @@ body {
   background-size: cover;*/
 
   /*background: color image repeat position/size */
-  background-color: var(--bg-color);
+  background: var(--bg-color);
   font-family: "Crimson", sans-serif;
   color: var(--text-color);
   height: 100%;
