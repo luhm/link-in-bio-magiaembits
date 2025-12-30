@@ -9,7 +9,7 @@
 :root {
   /*vamos criar uma variável que vai se aplicar à raiz do projeto, ou seja, a tudo*/
   --text-color: white;
-  --bg-color-url: url(./assets/bg-mobile.jpg);
+  --bg-color: hex(240b44);
   --border-color-links: rgba(255, 255, 255, 0.5);
   --bg-color-links: rgba(255, 255, 255, 0.1);
   --bg-social-hover: rgba(255, 255, 255, 0.2);
@@ -18,7 +18,7 @@
 
 .light-mode {
   --text-color: black;
-  --bg-color-url: url(./assets/bg-mobile-light-2.png);
+  --bg-color: hex(b289c2);
   --border-color-links: rgba(0, 0, 0, 0.5);
   --bg-color-links: rgba(0, 0, 0, 0.05);
   --bg-social-hover: rgba(0, 0, 0, 0.05);
