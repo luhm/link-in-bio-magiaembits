@@ -8,20 +8,20 @@
 
 :root {
   /*vamos criar uma variável que vai se aplicar à raiz do projeto, ou seja, a tudo*/
-  --text-color: white;
-  --bg-color: rgb(36, 11, 68);
-  --border-color-links: rgba(255, 255, 255, 0.5);
-  --bg-color-links: rgba(255, 255, 255, 0.1);
-  --bg-social-hover: rgba(255, 255, 255, 0.2);
+  --text-color: #f5f1e8;
+  --bg-color: rgba(36, 11, 68);
+  --border-color-links: rgba(245, 241, 232, 0.5);
+  --bg-color-links: rgba(230, 221, 238, 0.15);
+  --bg-social-hover: rgba(230, 221, 238, 0.1);
   --switch-button: url(./assets/moon-stars.svg);
 }
 
 .light-mode {
-  --text-color: black;
-  --bg-color: rgb(230, 221, 238);
-  --border-color-links: rgba(0, 0, 0, 0.5);
-  --bg-color-links: rgba(0, 0, 0, 0.05);
-  --bg-social-hover: rgba(0, 0, 0, 0.05);
+  --text-color: rgba(36, 11, 68);
+  --bg-color: #e6ddee;
+  --border-color-links: rgba(36, 11, 68, 0.5);
+  --bg-color-links: rgba(125,	50,	153, 0.15);
+  --bg-social-hover: rgba(125,	50,	153, 0.05);
   --switch-button: url(./assets/sun.svg);
 }
 
@@ -39,10 +39,10 @@ body {
   height: 100%;
 }
 
-h1 {
+/* h1 {
   font-family: 'Jersey 20', sans-serif;
   color: whitesmoke;
-}
+} */
 
 #container0 {
   /*border: 2px solid coral;
@@ -66,8 +66,8 @@ h1 {
 }
 
 #profile0 img {
-  width: 112px;
-  height: 112px;
+  width: 30%;
+  height: 30%;
   display: block;
   margin: auto;
 }
@@ -147,13 +147,15 @@ ul li {
 
 ul li a {
   color: var(--text-color);
+  font-family: 'Jersey 20';
+  font-size: large;
   text-decoration: none;
   font-weight: 500;
 }
 
 ul li:hover {
-  border: 1.5px solid rgba(255, 255, 255, 1);
-  background-color: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid var(--border-color-links);
+  background-color: var(--bg-social-hover);
 }
 
 #link1 {
@@ -198,12 +200,12 @@ ul li:hover {
 }
 
 /*media queries - no css sempre que começa com @ a gente chama de at-rule, e é uma regra que vamos implementar. É como dizer que, acima de 700px, tais regras serão adicionadas/aplicadas*/
-@media (min-width: 700px) {
+@media (prefers-color-scheme: dark) {
   :root {
-    --bg-color-url: url(./assets/bg-desktop.jpg);
+    var(--bg-color);
   }
   .light-mode {
-    --bg-color-url: url(./assets/bg-desktop-light.jpg);
+    var(--bg-color);
   }
   /*essa regra só funciona se tive, no HTML, a parte de metaviewport: <meta name="viewport" content="width=device-width, initial-scale=1.0" />*/
 }
